@@ -6,26 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Forest parallax</title>
 	<link rel="stylesheet" href="css/style.css">
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
 	<script src="js/script.js" defer></script>
 </head>
 <body>
-	<header class="main-header">
-		<div class="layers">
-			<div class="layer__header">
-				<p class="layers__caption">Welcome to Parallax</p>
-				<h1 class="layers__title">Fairy Forest</h1>
-			</div>
-			<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
-			<div class="layer layers__midle" style="background-image: url(img/layer-middle.png);"></div>
-			<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+	<div class="wrapper">
+		<div class="content">
+			<header class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<p class="layers__caption">Welcome to Parallax</p>
+						<h1 class="layers__title">Fairy Forest</h1>
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+					<div class="layer layers__midle" style="background-image: url(img/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+				</div>
+			</header>
+			<section class="main-article" style="background-image: url(img/dungeon.jpg);">
+				<div class="main-article__content">
+					<h2 class="main-article__header">To be continued</h2>
+					<p class="main-article__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium reiciendis, blanditiis amet odit repellendus modi dolorem cumque dolorum officia iste tempora dicta provident perspiciatis recusandae temporibus qui officiis ipsam voluptatibus.</p>
+				</div>
+				<div class="copy">©️ Kashia Troian (WebDesign Master lessons) </div>
+			</section>
 		</div>
-	</header>
-	<section class="main-article" style="background-image: url(img/dungeon.jpg);">
-		<div class="main-article__content">
-			<h2 class="main-article__header">To be continued</h2>
-			<p class="main-article__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium reiciendis, blanditiis amet odit repellendus modi dolorem cumque dolorum officia iste tempora dicta provident perspiciatis recusandae temporibus qui officiis ipsam voluptatibus.</p>
-		</div>
-		<div class="copy">©️ Kashia Troian (WebDesign Master lessons) </div>
-	</section>
+	</div>
 </body>
 </html>
