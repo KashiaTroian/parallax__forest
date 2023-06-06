@@ -178,7 +178,7 @@ body{
 	.main-article__text{
 		max-width: calc(var(--index) * 28);
 		font-size: calc(var(--index) * .8);
-		margin-top: font-size: calc(var(--index) / 1.26);
+		margin-top: calc(var(--index) / 1.26);
 		transform: translate3d(0, calc(var(--scrollTop) / 7.6), 0);
 		will-change: transform;
 	}
