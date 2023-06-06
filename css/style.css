@@ -75,6 +75,7 @@
 :root {
 	--index: calc(1vw + 1vh);
 	--text: #e7e7d0;
+	--transition: transform .76s cubic-bezier(.075, .5, 0, 1);
 }
 @font-face {
 	font-family: raleway_f;
@@ -123,6 +124,7 @@ body{
 	background-size: cover;
 	background-position: center;
 	will-change: transform;
+	transition: var(--transition);
 	z-index: 2;
 }
 .layers__base{
@@ -142,7 +144,8 @@ body{
 	text-transform: uppercase;
 	font-weight: 900;
 	color: var(--text);
-	text-shadow: 0 0 15px #bba575;;
+	text-shadow: 0 0 15px #bba575;
+	transition: var(--transition);
 }
 .layers__title {
 	font-size: calc(var(--index) * 2.6);
@@ -174,12 +177,17 @@ body{
 		font-weight: 900;
 		transform: translate3d(0, calc(var(--scrollTop) / 7.6), 0);
 		will-change: transform;
+		transition: var(--transition);
 	}
 	.main-article__text{
 		max-width: calc(var(--index) * 28);
 		font-size: calc(var(--index) * .8);
 		margin-top: calc(var(--index) / 1.26);
 		transform: translate3d(0, calc(var(--scrollTop) / 7.6), 0);
+		will-change: transform;
+		transition: var(--transition);
+	}
+	.content{
 		will-change: transform;
 	}
 	.copy{
